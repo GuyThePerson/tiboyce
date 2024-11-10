@@ -458,8 +458,8 @@ int main(int argc, char **argv) {
 		return 1;
 	}
 
-	if (savedatalength > 32768 + 48) {
-		fprintf(stderr, "Save files larger than 32KB are not supported\n");
+	if (savedatalength > 131072 + 192) {
+		fprintf(stderr, "Save files larger than 128 ish KB are not supported for now. Please edit the repo.\n");
 		return 1;
 	}
 
